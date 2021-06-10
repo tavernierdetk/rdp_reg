@@ -1,0 +1,100 @@
+{
+  "lang":"fr",
+  "name":"pipeline",
+  "version":"0.0.0",
+  "spacy_version":">=3.0.5,<3.1.0",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"53a3b967a",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null
+  },
+  "labels":{
+    "textcat_multilabel":[
+      "Politique municipale",
+      "Politique provinciale",
+      "Politique federale",
+      "Sante",
+      "Infrastructure",
+      "Education",
+      "Culture",
+      "Economie",
+      "Faits divers"
+    ]
+  },
+  "pipeline":[
+    "textcat_multilabel"
+  ],
+  "components":[
+    "textcat_multilabel"
+  ],
+  "disabled":[
+
+  ],
+  "performance":{
+    "cats_score_desc":"macro AUC",
+    "cats_micro_p":0.768,
+    "cats_micro_r":0.345323741,
+    "cats_micro_f":0.476426799,
+    "cats_macro_p":0.5702260702,
+    "cats_macro_r":0.1959079091,
+    "cats_macro_f":0.2575930211,
+    "cats_macro_auc":0.6759051991,
+    "cats_f_per_type":{
+      "Politique municipale":{
+        "p":0.5714285714,
+        "r":0.085106383,
+        "f":0.1481481481
+      },
+      "Politique provinciale":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "Politique federale":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "Sante":{
+        "p":0.9772727273,
+        "r":0.7049180328,
+        "f":0.819047619
+      },
+      "Infrastructure":{
+        "p":0.3333333333,
+        "r":0.0833333333,
+        "f":0.1333333333
+      },
+      "Education":{
+        "p":1.0,
+        "r":0.0625,
+        "f":0.1176470588
+      },
+      "Culture":{
+        "p":1.0,
+        "r":0.25,
+        "f":0.4
+      },
+      "Economie":{
+        "p":0.5,
+        "r":0.04,
+        "f":0.0740740741
+      },
+      "Faits divers":{
+        "p":0.75,
+        "r":0.5373134328,
+        "f":0.6260869565
+      }
+    },
+    "cats_macro_auc_per_type":0.0,
+    "cats_score":0.6759051991,
+    "textcat_multilabel_loss":12.4437724529
+  }
+}

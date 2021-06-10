@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Revue de presse du jour</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <style>
+	/*
+	 * Globals
+	 */
+	
+	  html {
+		font-size: 16px;
+	  }
+	
+	
+	body {
+	  font-family: Georgia, "Times New Roman", Times, serif;
+	  color: #555;
+	}
+	
+	a, a:hover, a:active {
+		color: #555;
+	}
+	
+	
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-weight: normal;
+	  color: #333;
+	}
+	
+	a.anchor {
+		display: block;
+		position: relative;
+		top: -100px;
+		visibility: hidden;
+	}
+	
+	
+	/*
+	 * Override Bootstrap's default container.
+	 */
+	
+	.container {
+	  max-width: 60rem;
+	}
+	
+	.card {
+		/* margin-bottom: 4px; */
+	}
+
+	.first-header {
+		background: rgb(0,156,218);
+    	background: -moz-linear-gradient(top, rgba(0,156,218,1) 0%, rgba(26,96,168,1) 100%);
+    	background: -webkit-linear-gradient(top, rgba(0,156,218,1) 0%,rgba(26,96,168,1) 100%);
+    	background: linear-gradient(to bottom, rgba(0,156,218,1) 0%,rgba(26,96,168,1) 100%);
+    	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009cda', endColorstr='#1a60a8',GradientType=0 );
+	}
+
+	.first-header h3 {
+		color: white;
+	}
+	
+	
+	/*
+	 * Masthead for nav
+	 */
+	
+	.blog-masthead {
+		margin-bottom: 3rem;
+		background: rgb(0,156,218);
+		background: -moz-linear-gradient(top, rgba(0,156,218,1) 0%, rgba(26,96,168,1) 100%);
+		background: -webkit-linear-gradient(top, rgba(0,156,218,1) 0%,rgba(26,96,168,1) 100%);
+		background: linear-gradient(to bottom, rgba(0,156,218,1) 0%,rgba(26,96,168,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009cda', endColorstr='#1a60a8',GradientType=0 );
+	  	-webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+		box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+		position: fixed;
+    	width: 100%;
+		top: 0;
+		z-index: 999;
+	}
+	
+	/* Nav links */
+	.nav-link {
+	  position: relative;
+	  padding: 1rem;
+	  font-weight: 500;
+	  color: #cdddeb;
+	  font-size: 20px;
+	}
+	.nav-link:hover,
+	.nav-link:focus {
+	  color: #fff;
+	  background-color: transparent;
+	}
+	
+	/* Active state gets a caret at the bottom */
+	.nav-link.active {
+	  color: #fff;
+	}
+	.nav-link.active:after {
+	  position: absolute;
+	  bottom: 0;
+	  left: 50%;
+	  width: 0;
+	  height: 0;
+	  margin-left: -.3rem;
+	  vertical-align: middle;
+	  content: "";
+	  border-right: .3rem solid transparent;
+	  border-bottom: .3rem solid;
+	  border-left: .3rem solid transparent;
+	}
+	
+	.navbar-fixed-bottom, .navbar-fixed-top {
+		position: fixed;
+		right: 0;
+		left: 0;
+		top: 0;
+		z-index: 1030;
+	}
+	
+	
+	/*
+	 * Blog name and description
+	 */
+	
+	.blog-header {
+	  padding-bottom: 1.25rem;
+	  margin-bottom: 2rem;
+	  border-bottom: .05rem solid #eee;
+	  margin-top: 0px;
+	}
+	.blog-title {
+	  margin-bottom: 0;
+	  font-size: 2rem;
+	  font-weight: normal;
+	}
+	.blog-description {
+	  font-size: 1.1rem;
+	  color: #999;
+	}
+	
+	@media (min-width: 40em) {
+	  .blog-title {
+		font-size: 3.5rem;
+	  }
+	}
+	
+	
+	/*
+	 * Main column and sidebar layout
+	 */
+	
+	.card-wrapper {
+		/*margin-bottom: 40px;*/
+	}
+	
+	.card-header {
+		font-size: larger;
+	}
+	
+	
+	
+	/*
+	 * Blog posts
+	 */
+	
+	.blog-post {
+	  margin-bottom: 4rem;
+	}
+	.blog-post-title {
+	  margin-bottom: .25rem;
+	  font-size: 2.5rem;
+	}
+	.blog-post-meta {
+	  margin-bottom: 1.25rem;
+	  color: #999;
+	}
+	
+	
+	/*
+	 * Footer
+	 */
+	
+	.blog-footer {
+	  padding: 2.5rem 0;
+	  color: #999;
+	  text-align: center;
+	  background-color: #f9f9f9;
+	  border-top: .05rem solid #e5e5e5;
+	}
+	.blog-footer p:last-child {
+	  margin-bottom: 0;
+	}
+	
+	@media (max-width: 500px) {
+	  	.nav-link {
+			padding: .3rem;
+			font-size: 14px;
+		}
+		
+		.blog-header {
+			margin-top: 50px;
+			padding-bottom: 0;
+    		margin-bottom: 1rem;
+		}
+		
+		a.anchor {
+			display: block;
+			position: relative;
+			top: -50px;
+			visibility: hidden;
+		}
+	}
+	</style>
+    
+  </head>
+
+  <body>
+
+ 	 <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+		        </nav>
+      </div>
+	</div>
+	
+    <div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">Bulletin du jour</h1>
+              </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-12 blog-main" id="main">
+			
+		            <a name="revue" class="anchor"></a>
+			
+			<div class="card">
+				<div class="card-header first-header">
+					<a class="card-link" data-toggle="collapse" href="#accordion0">
+						<h3>Nom de la région</h3>
+					</a>
+				</div>
+				<div id="accordion0" class="card-wrapper collapse" data-parent="#main">
+												<div class="card">
+								<div class="card-header">
+									<a class="card-link" data-toggle="collapse" href="#collapse0">
+										Titre de l'article									</a>
+								</div>
+								<div id="collapse0" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+                                        Sommaire de l'article
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper lorem nec nisi imperdiet viverra. Vivamus lacinia porta imperdiet. Nunc egestas scelerisque mi, tempor hendrerit turpis auctor at. In at felis risus. Nullam molestie, nisl at ultricies consequat, nisi tellus accumsan ante, vitae vestibulum neque dui non nisl.
+                                        <br>
+                                        <a href="https://ici.radio-canada.ca/nouvelle/1755027/chsld-saint-dorothee-enquete-publique-coroner" target="_blank">www.radio-canada.ca</a><br>									
+                                    </div>
+                                    </div>
+							</div>
+                            <div class="card">
+								<div class="card-header">
+									<a class="card-link" data-toggle="collapse" href="#collapse0">
+                                        Deuxième article									
+                                    </a>
+								</div>
+								<div id="collapse0" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+                                        Sommaire de l'article
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper lorem nec nisi imperdiet viverra. Vivamus lacinia porta imperdiet. Nunc egestas scelerisque mi, tempor hendrerit turpis auctor at. In at felis risus. Nullam molestie, nisl at ultricies consequat, nisi tellus accumsan ante, vitae vestibulum neque dui non nisl.
+                                        <br>
+                                        <a href="https://ici.radio-canada.ca/nouvelle/1755027/chsld-saint-dorothee-enquete-publique-coroner" target="_blank">www.radio-canada.ca</a><br>									
+                                    </div>
+                                    </div>
+							</div>
+										
+										</div>
+        	</div>
+			
+					<a name="annonces" class="anchor"></a>
+			
+			<div class="card">
+				<div class="card-header first-header">
+					<a class="card-link" data-toggle="collapse" href="#accordion30">
+						<h3>Deuxième région</h3>
+					</a>
+				</div>
+				<div id="accordion30" class="card-wrapper collapse" data-parent="#main">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#collapse0">
+                                Titre de l'article									</a>
+                        </div>
+                        <div id="collapse0" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Sommaire de l'article
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper lorem nec nisi imperdiet viverra. Vivamus lacinia porta imperdiet. Nunc egestas scelerisque mi, tempor hendrerit turpis auctor at. In at felis risus. Nullam molestie, nisl at ultricies consequat, nisi tellus accumsan ante, vitae vestibulum neque dui non nisl.
+                                <br>
+                                <a href="https://ici.radio-canada.ca/nouvelle/1755027/chsld-saint-dorothee-enquete-publique-coroner" target="_blank">www.radio-canada.ca</a><br>									
+                            </div>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#collapse0">
+                                Deuxième article									
+                            </a>
+                        </div>
+                        <div id="collapse0" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Sommaire de l'article
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper lorem nec nisi imperdiet viverra. Vivamus lacinia porta imperdiet. Nunc egestas scelerisque mi, tempor hendrerit turpis auctor at. In at felis risus. Nullam molestie, nisl at ultricies consequat, nisi tellus accumsan ante, vitae vestibulum neque dui non nisl.
+                                <br>
+                                <a href="https://ici.radio-canada.ca/nouvelle/1755027/chsld-saint-dorothee-enquete-publique-coroner" target="_blank">www.radio-canada.ca</a><br>									
+                            </div>
+                            </div>
+                    </div>
+                                
+										</div>
+        	</div>
+					
+		 
+
+
+ 
+
+            <a name="whip_directives" class="anchor"></a>
+			
+			<div class="card">
+				<div class="card-header first-header">
+					<a class="card-link" data-toggle="collapse" href="#accordion33">
+						<h3>Bas Saint-Laurent</h3>
+					</a>
+				</div>
+				<div id="accordion33" class="card-wrapper collapse" data-parent="#main">
+											<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapse33">
+									Mesures et directives du gouvernement - 3 Décembre								</a>
+							</div>
+							<div id="collapse33" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									<img src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/image001-478x478.png" alt="" width="478" height="478" class="alignnone size-medium wp-image-17775" />									<br>
+																	</div>
+							</div>
+						</div>
+											<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapse34">
+									Mesures et directives du gouvernement - 17 novembre								</a>
+							</div>
+							<div id="collapse34" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									<img class="alignnone size-medium wp-image-17695" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-210-336w_ecran_16x9_calendrier_noel_covid_v2_a-478x269.jpg" alt="" width="478" height="269" />									<br>
+									<h5>Article(s) complet(s) :</h5><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-210-336w_ecran_16x9_calendrier_noel_covid_v2_a.jpg" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-210-336w_ecran_16x9_calendrier_noel_covid_v2_a.jpg</a><br>								</div>
+							</div>
+						</div>
+											<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapse35">
+									Mesures et directives du gouvernement - 17 novembre								</a>
+							</div>
+							<div id="collapse35" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									<img class="alignnone size-medium wp-image-17657" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-914-10w_aide_telephone_v8_1_-003-478x478.jpg" alt="" width="478" height="478" />									<br>
+									<h5>Article(s) complet(s) :</h5><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-914-10w_aide_telephone_v8_1_-003.jpg" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-914-10w_aide_telephone_v8_1_-003.jpg</a><br>								</div>
+							</div>
+						</div>
+											<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapse36">
+									Mesures et directives du gouvernement - 4 novembre								</a>
+							</div>
+							<div id="collapse36" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									<img class="alignnone size-medium wp-image-17530" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/consignes-sanitaire-ski-287x478.png" alt="" width="287" height="478" />									<br>
+									<h5>Article(s) complet(s) :</h5><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/consignes-sanitaire-ski.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/consignes-sanitaire-ski.png</a><br>								</div>
+							</div>
+						</div>
+											<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapse37">
+									Mesures et directives du gouvernement - 26 octobre								</a>
+							</div>
+							<div id="collapse37" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									<img class="alignnone size-medium wp-image-17415" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-26_infocovid_ang-478x478.png" alt="" width="478" height="478" />
+
+<img class="alignnone size-medium wp-image-17416" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-26_infocovid_fr-478x478.png" alt="" width="478" height="478" />									<br>
+									<h5>Article(s) complet(s) :</h5><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-26_infocovid_ang.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-26_infocovid_ang.png</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-26_infocovid_fr.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-26_infocovid_fr.png</a><br>								</div>
+							</div>
+						</div>
+											<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapse38">
+									Mesures et directives du gouvernement - 9 octobre - Action de grâce								</a>
+							</div>
+							<div id="collapse38" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									<img class="alignnone size-medium wp-image-17226" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-09_infocovid-action-de-grace_fr-478x478.png" alt="" width="478" height="478" />
+
+<img class="alignnone size-medium wp-image-17227" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-09_infocovid-action-de-grace_en-478x478.png" alt="" width="478" height="478" />									<br>
+									<h5>Article(s) complet(s) :</h5><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-09_infocovid-action-de-grace_fr.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-09_infocovid-action-de-grace_fr.png</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-09_infocovid-action-de-grace_en.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-09_infocovid-action-de-grace_en.png</a><br>								</div>
+							</div>
+						</div>
+											<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapse39">
+									Mesures et directives du gouvernement - 8 octobre - Niveau d'alerte maximale								</a>
+							</div>
+							<div id="collapse39" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									<img class="alignnone size-medium wp-image-17228" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-08_infocovid_ang-478x478.png" alt="" width="478" height="478" />
+
+<img class="alignnone size-medium wp-image-17229" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-08_infocovid_fr-478x478.png" alt="" width="478" height="478" />									<br>
+									<h5>Article(s) complet(s) :</h5><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-08_infocovid_ang.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-08_infocovid_ang.png</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-08_infocovid_fr.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/2020-10-08_infocovid_fr.png</a><br>								</div>
+							</div>
+						</div>
+											<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapse40">
+									Mesures et directives du gouvernement - 5 octobre - Alerte Covid								</a>
+							</div>
+							<div id="collapse40" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									<img class="alignnone size-medium wp-image-17175" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid__facebook-478x251.jpg" alt="" width="478" height="251" /> <img class="alignnone size-medium wp-image-17174" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid____facebook_ang-478x251.jpg" alt="" width="478" height="251" /> <img class="alignnone size-medium wp-image-17177" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid__twitter-478x269.jpg" alt="" width="478" height="269" /> <img class="alignnone size-medium wp-image-17176" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid____twitter_ang-478x269.jpg" alt="" width="478" height="269" /> <img class="alignnone size-medium wp-image-17179" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid_instagram-478x478.jpg" alt="" width="478" height="478" /> <img class="alignnone size-medium wp-image-17178" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid____instagram_ang-478x478.jpg" alt="" width="478" height="478" />									<br>
+									<h5>Article(s) complet(s) :</h5><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid__facebook.jpg" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid__facebook.jpg</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid____facebook_ang.jpg" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid____facebook_ang.jpg</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid__twitter.jpg" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid__twitter.jpg</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid____twitter_ang.jpg" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid____twitter_ang.jpg</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid_instagram.jpg" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid_instagram.jpg</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid____instagram_ang.jpg" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/medias-sociaux_alerte-covid____instagram_ang.jpg</a><br>								</div>
+							</div>
+						</div>
+											<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapse41">
+									Mesures et directives du gouvernement - 5 octobre								</a>
+							</div>
+							<div id="collapse41" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									<img class="alignnone size-medium wp-image-17160" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/05_infographie_pretez-main-forte_v7-478x251.png" alt="" width="478" height="251" /> <img class="alignnone size-medium wp-image-17161" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/01_infographie_journee-mondiale-des-enseignants_education_v4-478x251.jpg" alt="" width="478" height="251" />  <img class="alignnone size-medium wp-image-17162" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-123_infographie_ens-sup_v3-478x478.png" alt="" width="478" height="478" /> <img class="alignnone size-medium wp-image-17163" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-122_infographie_loisir-sport_v7-478x478.png" alt="" width="478" height="478" /> <img class="alignnone size-medium wp-image-17164" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-121_infographie_parasco_v12-478x478.png" alt="" width="478" height="478" /><img class="alignnone size-medium wp-image-17159" src="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-120_infographie_pedago_v13-478x478.png" alt="" width="478" height="478" />									<br>
+									<h5>Article(s) complet(s) :</h5><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/05_infographie_pretez-main-forte_v7.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/05_infographie_pretez-main-forte_v7.png</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/01_infographie_journee-mondiale-des-enseignants_education_v4.jpg" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/01_infographie_journee-mondiale-des-enseignants_education_v4.jpg</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-123_infographie_ens-sup_v3.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-123_infographie_ens-sup_v3.png</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-122_infographie_loisir-sport_v7.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-122_infographie_loisir-sport_v7.png</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-121_infographie_parasco_v12.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-121_infographie_parasco_v12.png</a><br><a href="https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-120_infographie_pedago_v13.png" target="_blank">https://coalitionavenirquebec.org/wp-content/uploads/2020/03/20-085-120_infographie_pedago_v13.png</a><br>								</div>
+							</div>
+						</div>
+									</div>
+        	</div>
+             
+
+            <a name="graphique_covid" class="anchor"></a>
+			
+									</div>
+			</div>
+            			
+			            
+            
+                
+            
+			                
+                
+            
+            
+            
+            
+            
+
+
+        </div><!-- /.blog-main -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer" style="display: none;">
+		<div>&copy; 2020 CAQ</div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://v4-alpha.getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript"> 
+	jQuery(document).ready(function($){
+
+		$(window).on('hashchange', function() {
+			if (window.location.hash == "#revue") {       
+				$(".nav-link").removeClass("active");
+				$(".revue").addClass("active");
+			} 
+			if (window.location.hash == "#annonces") {       
+				$(".nav-link").removeClass("active");
+				$(".annonces").addClass("active");
+			} 
+			if (window.location.hash == "#entrevues") {       
+				$(".nav-link").removeClass("active");
+				$(".entrevues").addClass("active");
+			} 
+			if (window.location.hash == "#medias") {       
+				$(".nav-link").removeClass("active");
+				$(".medias").addClass("active");
+			} 
+		});
+		
+	});
+	</script>
+  </body>
+</html>
+
+<!-- Dynamic page generated in 0.405 seconds. -->
+<!-- Page not cached by WP Super Cache. Check your settings page. Not caching requests by known users. (See Advanced Settings page) -->

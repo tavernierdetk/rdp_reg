@@ -1,0 +1,116 @@
+{
+  "lang":"fr",
+  "name":"pipeline",
+  "version":"0.0.0",
+  "spacy_version":">=3.0.5,<3.1.0",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"53a3b967a",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null
+  },
+  "labels":{
+    "tok2vec":[
+
+    ],
+    "ner":[
+
+    ],
+    "textcat_multilabel":[
+      "Politique municipale",
+      "Politique provinciale",
+      "Politique federale",
+      "Sante",
+      "Infrastructure",
+      "Education",
+      "Culture",
+      "Economie",
+      "Faits divers"
+    ]
+  },
+  "pipeline":[
+    "tok2vec",
+    "ner",
+    "textcat_multilabel"
+  ],
+  "components":[
+    "tok2vec",
+    "ner",
+    "textcat_multilabel"
+  ],
+  "disabled":[
+
+  ],
+  "performance":{
+    "ents_per_type":0.0,
+    "cats_score_desc":"macro AUC",
+    "cats_micro_p":0.8266666667,
+    "cats_micro_r":0.5414847162,
+    "cats_micro_f":0.654353562,
+    "cats_macro_p":0.7835537919,
+    "cats_macro_r":0.3802025861,
+    "cats_macro_f":0.4580064815,
+    "cats_macro_auc":0.8296820543,
+    "cats_f_per_type":{
+      "Politique municipale":{
+        "p":0.75,
+        "r":0.7058823529,
+        "f":0.7272727273
+      },
+      "Politique provinciale":{
+        "p":0.8,
+        "r":0.5714285714,
+        "f":0.6666666667
+      },
+      "Politique federale":{
+        "p":0.8888888889,
+        "r":0.4705882353,
+        "f":0.6153846154
+      },
+      "Sante":{
+        "p":0.9464285714,
+        "r":0.8412698413,
+        "f":0.8907563025
+      },
+      "Infrastructure":{
+        "p":0.3333333333,
+        "r":0.2857142857,
+        "f":0.3076923077
+      },
+      "Education":{
+        "p":1.0,
+        "r":0.0909090909,
+        "f":0.1666666667
+      },
+      "Culture":{
+        "p":1.0,
+        "r":0.1111111111,
+        "f":0.2
+      },
+      "Economie":{
+        "p":0.8333333333,
+        "r":0.2272727273,
+        "f":0.3571428571
+      },
+      "Faits divers":{
+        "p":0.5,
+        "r":0.1176470588,
+        "f":0.1904761905
+      }
+    },
+    "cats_macro_auc_per_type":0.0,
+    "ents_f":0.0,
+    "ents_p":0.0,
+    "ents_r":0.0,
+    "cats_score":0.8296820543,
+    "tok2vec_loss":0.0,
+    "ner_loss":0.0,
+    "textcat_multilabel_loss":11.2326363067
+  }
+}
